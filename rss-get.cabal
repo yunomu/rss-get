@@ -14,7 +14,7 @@ category:            Web
 build-type:          Simple
 cabal-version:       >=1.8
 
-executable trac-rss
+executable rss-get
   hs-source-dirs:    src
   main-is:           Main.hs
   other-modules:     Rss
@@ -25,6 +25,8 @@ executable trac-rss
                      , bytestring
                      , text
                      , transformers
+                     , monad-control
                      , conduit
                      , xml-conduit
+                     , xml-types
                      , http-conduit
